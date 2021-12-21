@@ -20,7 +20,7 @@ node {
   
     stage('deploy') {
       def resourceGroup = 'cloudreachrgsptr1'
-      def webAppName = 'Jwebappsp1'
+      def webAppName = 'Jwebappsp2'
       // login Azure
       withCredentials([usernamePassword(credentialsId: 'AzureServicePrincipal', passwordVariable: 'AZURE_CLIENT_SECRET', usernameVariable: 'AZURE_CLIENT_ID')]) {
        sh '''
